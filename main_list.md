@@ -1,6 +1,6 @@
 # Cyber Security Links and Resources
 ---
-#### *This will be a list of various resources I have encountered while studying various topics relating to security. I will do my best to categorize them based on purpose. Will be a continous work in progress.*
+#### *This will be a list of resources I have encountered while studying various topics relating to security. I will do my best to categorize them based on purpose. Will be a continous work in progress.*
 
 ## OSINT
 - https://osintframework.com/
