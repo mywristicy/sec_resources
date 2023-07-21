@@ -21,3 +21,18 @@
 - https://feodotracker.abuse.ch/
 -- From the site, "... a project of abuse.ch with the goal of sharing botnet C&C servers associated with Dridex, Emotet (aka Heodo), TrickBot, QakBot (aka QuakBot / Qbot) and BazarLoader (aka BazarBackdoor). It offers various blocklists, helping network owners to protect their users from Dridex and Emotet/Heodo."
 
+- https://sslbl.abuse.ch/
+-- From the site, "The SSL Blacklist (SSLBL) is a project of abuse.ch with the goal of detecting malicious SSL connections, by identifying and blacklisting SSL certificates used by botnet C&C servers. In addition, SSLBL identifies JA3 fingerprints that helps you to detect & block malware botnet C&C communication on the TCP layer."
+
+- https://urlhaus.abuse.ch/
+-- From the site, "URLhaus is a project from abuse.ch with the goal of sharing malicious URLs that are being used for malware distribution.""
+
+- https://threatfox.abuse.ch/
+-- From the site, "ThreatFox is a free platform from abuse.ch with the goal of sharing indicators of compromise (IOCs) associated with malware with the infosec community, AV vendors and threat intelligence providers."
+
+- https://talosintelligence.com/
+-- Site run by Cisco. According to tryhackme, "... to provide actionable intelligence, visibility on indicators, and protection against emerging threats through data collected from their products"
+
+## Phishing
+- https://www.phishtool.com/
+-- From tryhackme, "seeks to elevate the perception of phishing as a severe form of attack and provide a responsive means of email security. Through email analysis, security analysts can uncover email IOCs, prevent breaches and provide forensic reports that could be used in phishing containment and training engagements."
