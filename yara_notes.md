@@ -108,3 +108,20 @@ rule helloworld_checker{
 	        $hello_world and filesize < 10KB 
 }
 ```
+#### Yara Modules
+- **Cuckoo Sandbox** is an automated malware analysis enviroment. With this module you can generate Yara rules based upon the behaviors discovered from the Cuckoo Sandbox. As the sandbox executes malware, we can create rules on specific behaviors such as runtime strings and the like.
+- **Python's PE** module allows you to create Yara rules from the various sections and elements of the Windows Portable Executeable (PE) structure. Examining a PE file's contents is an essential technique in malware analysis; behaviors such as cryptography or worming can be largely identified without reverse engineering or execution of the sample.
+
+#### Yara Tools
+- https://github.com/InQuest/awesome-yara
+-- Github collection of Yara tools and resources. Huge.
+
+- https://github.com/Neo23x0/Loki LOKI: a free open-source IOC scanner.
+-- LOKI's detection is based on 4 methods: 1) File Name IOC Check 2) Yara Rule Check 3) Hash Check 4) C2 Back Connect Check
+
+- https://www.nextron-systems.com/thor-lite/ THOR-Lite: a multiplatform IOC and Yara scanner. Features scan throttling to limit exhausting CPU resources. (Need to subscribe to their mailing list/register to download)
+
+- https://github.com/Neo23x0/Fenrir FENRIR: a simple IOC scanner bash script. It allows scanning Linux/Unix/OSX systems for IOCs.
+
+- https://github.com/Neo23x0/yarGen yarGen: a generator for Yara rules
+
