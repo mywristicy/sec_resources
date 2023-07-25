@@ -46,3 +46,7 @@
 - https://www.phishtool.com/
 -- From tryhackme, "seeks to elevate the perception of phishing as a severe form of attack and provide a responsive means of email security. Through email analysis, security analysts can uncover email IOCs, prevent breaches and provide forensic reports that could be used in phishing containment and training engagements."
 -- Basically a tool to help you analyze emails to search fror signs of phishing. Need to create an account but offers a free Community version and paid Enterprise version.
+
+## Malware Analysis
+- https://cuckoosandbox.org/
+-- An open source automated malware analysis system. 
