@@ -2,7 +2,7 @@
 #### *This is a note space for the Yara THM module.*
 ---
 
-#### What is Yara?
+### What is Yara?
 - From THM, "... Yara can identify information based on both binary and textual patterns, such as hexadecimal and strings contained within a file."
 -- Yara rules are frequently written to determine if a file is malicious or not, based upon the features - or patterns - it presents, such as Strings in programming languages. For example, we could write a Yara rule to search for "hello world" in every program on our operating system if we would like. 
 
@@ -37,7 +37,7 @@ marty@icebox: ~$ yara myfirstrule.yar somefile1111
 error scanning somefile1111: could not open file
 ```
 ---
-#### Expanding on Yara
+### Expanding on Yara
 - Yara writing rules link https://yara.readthedocs.io/en/stable/writingrules.html
 - Above is some Yara documentation on writing rules in Yara. Big page could be useful to refer to when writing rules of your own.
 
@@ -108,11 +108,12 @@ rule helloworld_checker{
 	        $hello_world and filesize < 10KB 
 }
 ```
-#### Yara Modules
+---
+### Yara Modules
 - **Cuckoo Sandbox** is an automated malware analysis enviroment. With this module you can generate Yara rules based upon the behaviors discovered from the Cuckoo Sandbox. As the sandbox executes malware, we can create rules on specific behaviors such as runtime strings and the like.
 - **Python's PE** module allows you to create Yara rules from the various sections and elements of the Windows Portable Executeable (PE) structure. Examining a PE file's contents is an essential technique in malware analysis; behaviors such as cryptography or worming can be largely identified without reverse engineering or execution of the sample.
-
-#### Yara Tools
+---
+### Yara Tools
 - https://github.com/InQuest/awesome-yara
 -- Github collection of Yara tools and resources. Huge.
 
