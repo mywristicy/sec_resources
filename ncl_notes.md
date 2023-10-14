@@ -43,7 +43,9 @@ if __name__ == "__main__":
 - then we ```checksec --file=stone```
 - We see that several protections are in place so we cant do a buffer overflow exploit.
 - if we run ```ll``` we see that the file is not set to be executable so we can change that with ```chmod +x stone```
-- now if we try to run it we get this error ```./stone: error while loading shared libraries: libcrypto.so.1.1: cannot open shared object file: No such file or directory``` skipping this for now per Hillman instruction so we will instead try to use a decomplier like ghidra
+- now if we try to run it we get this error ```./stone: error while loading shared libraries: libcrypto.so.1.1: cannot open shared object file: No such file or directory``` skipping this for now per Hillman instruction so we will instead try to use a decomplier like ghidra. We ran ```ghidra``` to install it.
+- ```ltrace``` traces any dll calls
+- ```strace``` traces system calls
 - 
 
 ## Password Cracking
