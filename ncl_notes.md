@@ -32,3 +32,34 @@ if __name__ == "__main__":
 - We can try dividing 917 by 9 to hopefully give us the unicode value of the other 9 characters. 917 / 9 = 101.888888889. 
 - From here if we use ```chr(101)``` in python, we are shown that this unicode value is actually the letter 'e'. Also doing the modulo command in python we get 917 % 9 = 8. For some reason the NCL adds 101 and 8 to get the unicode value of 109 which is 'm'. I however mulitplied 101 times 9 which gave me 909, I then added 83 to this and got 992 which is 8 characters short of 1000.
 - However 101 * 8 is 808 and adding 83 to that gives us 891. If we subtract 1000 from this we get 109 and which is the unicode value of 'm.' This should statisfy the password requirement as 109(m) + 83(S) + 808(eeeeeeee) = 1000, the password length is 10 characters and the second character is "S" or 83 in unicode. If we try this we get 'correct!'
+
+### Stone (Prac Game chall3)
+- name of our file "stone"
+- ran ```file`` to get file info on stone
+- comes out as an "ELF" file, LSB-least signigicant bit, pie-position independent executable, dynamically linked- functions that are used while this app is executing that is not inside this file, stripped- function or symbol names have been removed
+- ```ldd stone```
+- cmd above shows us what libraries the program or binary is reaching out for
+- installing pwntools next ```sudo apt install python3-pwntools -y``` (run sudo apt update b4)
+- then we ```checksec --file=stone```
+- We see that several protections are in place so we cant do a buffer overflow exploit.
+- if we run ```ll``` we see that the file is not set to be executable so we can change that with ```chmod +x stone```
+- now if we try to run it we get this error ```./stone: error while loading shared libraries: libcrypto.so.1.1: cannot open shared object file: No such file or directory``` skipping this for now per Hillman instruction so we will instead try to use a decomplier like ghidra
+- 
+
+## Password Cracking
+### Hashcat Mask attack
+- Format used to crack these three hashes
+```
+649dd67a0ce5b8b266429b1877112abd
+80d83106e75d5e93b02a47d79be39c02
+b0e3ec3b32427b9e6e551d355b126418
+```
+```
+hashcat -a 3 -m 0 crackmask.txt SKY-ICYY-?d?d?d?d
+```
+- Spits out these three results
+```
+SKY-ICYY-9050
+SKY-ICYY-5035
+SKY-ICYY-9226
+```
