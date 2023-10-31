@@ -16,3 +16,7 @@ Proxy type: HTTP
 IP: 127.0.0.1
 Port: 8080
 ```
+- After saving the settings, click the extension button again and select the "Burp" configuration we just created. This will redirect the browser traffic through 127.0.0.1:8080.
+- Finally, go to Burp Suite and ensure that Intercept is turned on in the Proxy tab.
+- To test the proxy, open firefox and try accessing a site. The browser should hang and the proxy will populate with the HTTP request.
+- 
